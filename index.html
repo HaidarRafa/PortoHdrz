@@ -9,7 +9,7 @@
     />
     <meta name="application-name" content="%VITE_APP_NAME%" />
     <meta name="application-version" content="%VITE_APP_VERSION%" />
-    <meta name="theme-color" content="#f7f5f1" />
+    <meta name="theme-color" content="#0a192f" />
     <title>Haidar Rafa Radinka — Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
     <header class="site-header" id="top">
       <nav class="navigation page-width" aria-label="Navigasi utama">
         <a class="wordmark" href="#top" aria-label="Haidar Rafa Radinka, ke atas">
-          <span class="wordmark-mark">hdrz</span>
+          <span class="wordmark-mark">Hdrz</span>
         </a>
         <div class="navigation-links">
           <a href="#keahlian">Keahlian</a>
@@ -39,15 +39,19 @@
       <section class="hero-section" aria-labelledby="hero-title">
         <div class="hero-inner page-width">
           <div class="hero-copy">
-            <p class="hero-greeting">Halo, saya</p>
+            <p class="hero-greeting">Halo, nama saya</p>
             <h1 id="hero-title">Haidar Rafa <span>Radinka.</span></h1>
             <p class="hero-role">Mahasiswa Teknik Informatika · Semester 5</p>
             <p class="hero-description">
               Seorang pembelajar yang antusias mendalami dunia Data Science. Saat ini saya fokus mengeksplorasi cara mengolah data menjadi informasi melalui berbagai proyek latihan dan studi kasus.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#proyek">Lihat proyek <span aria-hidden="true">↓</span></a>
-              <a class="text-link" href="#kontak">Hubungi saya <span aria-hidden="true">↗</span></a>
+              <a class="button button-primary" href="#proyek">
+                <span class="button-label">LIHAT PROFILE</span>
+              </a>
+              <a class="button button-secondary" href="#kontak">
+                <span class="button-label">HUBUNGI SAYA</span>
+              </a>
             </div>
           </div>
           <div class="hero-portrait">
@@ -65,18 +69,19 @@
 
       <section class="section skills-section" id="keahlian" aria-labelledby="skills-title">
         <div class="section-inner">
-          <p class="section-kicker">Sedang dipelajari</p>
+          <p class="section-kicker" id="skills-title">Hal Yang Saya Pelajari</p>
           <ul
-            class="skill-logo-list"
-            id="skill-list"
-            aria-label="Teknologi yang sedang dipelajari"
+            class="showcase-list"
+            id="showcase-list"
+            aria-label="Keahlian dan pencapaian"
+            tabindex="0"
           ></ul>
         </div>
       </section>
 
       <section class="section projects-section" id="proyek" aria-labelledby="projects-title">
         <div class="section-inner">
-          <p class="section-kicker">Pilihan Proyek</p>
+          <p class="section-kicker">Eksplorasi & Project</p>
           <div class="project-grid">
             <article class="project-card">
               <div class="project-card-top">
@@ -84,8 +89,7 @@
               </div>
               <h3>Website portofolio</h3>
               <p>
-                Website pribadi untuk mengenalkan profil, minat, dan perjalanan belajar saya
-                di bidang teknologi.
+                Website pribadi untuk mendokumentasikan profil, proses belajar, dan berbagai proyek eksplorasi Ke depannya.
               </p>
               <ul class="project-tags" aria-label="Teknologi">
                 <li>HTML</li>
@@ -140,8 +144,7 @@
 
     <footer class="site-footer">
       <div class="site-footer-inner page-width">
-        <a class="wordmark" href="#top">Haidar Rafa Radinka</a>
-        <p class="footer-copyright">© <span id="current-year"></span></p>
+        <p class="footer-copyright">© <span id="current-year"></span> Haidar Rafa Radinka</p>
       </div>
     </footer>
   </body>
