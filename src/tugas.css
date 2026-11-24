@@ -56,6 +56,12 @@ button {
   cursor: pointer;
 }
 
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
 h1,
 h2,
 h3,
@@ -101,23 +107,14 @@ h3 {
   text-decoration: none;
 }
 
-.app-wordmark span {
-  color: var(--task-muted);
-  font-family: "Nunito", "Trebuchet MS", "Segoe UI", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.back-link,
-.app-footer a {
+.back-link {
   color: var(--task-accent);
   font-size: 0.9rem;
   font-weight: 800;
   text-decoration: none;
 }
 
-.back-link:hover,
-.app-footer a:hover {
+.back-link:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -208,12 +205,6 @@ h3 {
   color: var(--task-accent);
 }
 
-.optional-note {
-  color: var(--task-muted);
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
 .form-field input {
   width: 100%;
   min-height: 46px;
@@ -222,11 +213,6 @@ h3 {
   border-radius: 4px;
   color: var(--task-ink);
   background: var(--task-background);
-}
-
-.form-field input::placeholder {
-  color: #6d7897;
-  opacity: 1;
 }
 
 .form-field input:focus {
@@ -428,10 +414,6 @@ h3 {
 
 .app-footer p {
   margin: 0;
-}
-
-[hidden] {
-  display: none !important;
 }
 
 @media (max-width: 760px) {

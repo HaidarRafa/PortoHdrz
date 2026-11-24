@@ -15,89 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="./src/tugas.ts"></script>
+    <script type="module" src="./src/tugas/main.tsx"></script>
   </head>
   <body>
-    <header class="app-header">
-      <nav class="app-navigation" aria-label="Navigasi aplikasi">
-        <a class="app-wordmark" href="./index.html">Hdrz</a>
-        <a class="back-link" href="./index.html#proyek">
-          <span aria-hidden="true"></span> Kembali ke Portofolio
-        </a>
-      </nav>
-    </header>
-
-    <main class="app-main">
-      <section class="app-intro" aria-labelledby="page-title">
-        <h1 id="page-title">Daftar Tugas <span>Kuliah.</span></h1>
-        <p class="app-description">
-          Catat tugas, pantau tenggat, dan tandai pekerjaan yang sudah selesai.
-        </p>
-        <p class="task-summary" id="task-summary" role="status" aria-live="polite">
-        </p>
-      </section>
-
-      <div class="app-layout">
-        <section class="task-form-card" aria-labelledby="form-title">
-          <h2 class="app-kicker" id="form-title">Tambah tugas</h2>
-          <form id="task-form">
-            <label class="form-field" for="task-title">
-              <span>JUDUL TUGAS <span class="required-mark" aria-hidden="true">*</span></span>
-              <input
-                id="task-title"
-                name="title"
-                type="text"
-                maxlength="120"
-                autocomplete="off"
-                placeholder="Contoh: Laporan praktikum"
-                required
-              />
-            </label>
-            <label class="form-field" for="task-course">
-              <span>MATA KULIAH <span class="required-mark" aria-hidden="true">*</span></span>
-              <input
-                id="task-course"
-                name="course"
-                type="text"
-                maxlength="80"
-                autocomplete="off"
-                placeholder="Contoh: Pengembangan Aplikasi Web"
-                required
-              />
-            </label>
-            <label class="form-field" for="task-due-date">
-              <span>TENGGAT <span class="optional-note"> (opsional)</span></span>
-              <input id="task-due-date" name="dueDate" type="date" />
-            </label>
-            <div class="form-actions">
-              <button class="button button-primary" id="submit-task" type="submit">
-                TAMBAHKAN TUGAS
-              </button>
-              <button class="button button-secondary" id="cancel-edit" type="button" hidden>
-                Batalkan
-              </button>
-            </div>
-          </form>
-        </section>
-
-        <section class="task-list-section" aria-labelledby="list-title">
-          <div class="task-list-heading">
-            <div>
-              <h2 class="app-kicker">Tugas saya</h2>
-            </div>
-            <span class="task-count" id="task-count">0 tugas</span>
-          </div>
-          <p class="app-notice" id="app-notice" role="status" aria-live="polite"></p>
-          <p class="empty-state" id="empty-state">
-            Belum ada tugas.
-          </p>
-          <ul class="task-list" id="task-list" aria-label="Daftar tugas kuliah"></ul>
-        </section>
-      </div>
-    </main>
-
-    <footer class="app-footer">
-      <p>© <span id="current-year"></span> Haidar Rafa Radinka</p>
-    </footer>
+    <div id="root"></div>
+    <noscript>Aplikasi daftar tugas memerlukan JavaScript untuk berjalan.</noscript>
   </body>
 </html>
